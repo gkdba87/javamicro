@@ -15,7 +15,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.3.5.RELEASE</version>
-    </parent>
+<dependency>
+    <groupId>io.swagger</groupId>
+    <artifactId>swagger-play2_2.11</artifactId>
+    <version>1.5.0</version>
+</dependency>    </parent>
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
@@ -48,6 +52,7 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>${springfox-version}</version>
         </dependency>
+        
         <dependency>
         <groupId>org.apache.zookeeper</groupId>
         <artifactId>zookeeper</artifactId>
@@ -72,7 +77,17 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>${springfox-version}</version>
         </dependency>
-
+       <!-- https://mvnrepository.com/artifact/xyz.lxie/spring-boot-starter-swagger -->
+<dependency>
+    <groupId>xyz.lxie</groupId>
+    <artifactId>spring-boot-starter-swagger</artifactId>
+    <version>1.0.0</version>
+</dependency>
+         <dependency>
+    <groupId>io.swagger</groupId>
+    <artifactId>swagger-parser</artifactId>
+    <version>1.0.0</version>
+</dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-joda</artifactId>
